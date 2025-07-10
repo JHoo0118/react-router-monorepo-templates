@@ -1,0 +1,39 @@
+{
+  "name": "react-router-monorepo-templates",
+  "version": "1.0.0",
+  "description": "React Router Monorepo Templates",
+  "private": true,
+  "scripts": {
+    "build": "pnpm --filter @react-router-monorepo-templates/ui build && pnpm -r build",
+    "dev": "pnpm -r dev",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "dev:landing": "pnpm --filter @react-router-monorepo-templates/landing dev",
+    "dev:canvas": "pnpm --filter @react-router-monorepo-templates/canvas dev",
+    "dev:ui": "pnpm --filter @react-router-monorepo-templates/ui dev"
+  },
+  "keywords": [
+    "react-router",
+    "monorepo",
+    "templates"
+  ],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "devDependencies": {
+    "@playwright/test": "^1.54.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vanilla-extract/css": "^1.17.4",
+    "@vanilla-extract/sprinkles": "^1.6.5",
+    "@vanilla-extract/vite-plugin": "^5.1.0",
+    "rollup-plugin-visualizer": "^6.0.3",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.4",
+    "vite-plugin-checker": "^0.10.0",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-dts": "^4.0.0",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}

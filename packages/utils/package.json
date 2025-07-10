@@ -1,0 +1,25 @@
+{
+  "name": "@react-router-monorepo-templates/utils",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "index.ts",
+  "types": "index.ts",
+  "exports": {
+    ".": {
+      "types": "./index.ts",
+      "import": "./index.ts"
+    },
+    "./dates": {
+      "types": "./dates.ts",
+      "import": "./dates.ts"
+    },
+    "./http": {
+      "types": "./http.ts",
+      "import": "./http.ts"
+    }
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

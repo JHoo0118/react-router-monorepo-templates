@@ -1,0 +1,22 @@
+{
+  "name": "@react-router-monorepo-templates/canvas",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@react-router-monorepo-templates/config": "workspace:*",
+    "@react-router-monorepo-templates/ui": "workspace:*",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.12",
+    "@vitejs/plugin-react": "^4.6.0"
+  }
+}

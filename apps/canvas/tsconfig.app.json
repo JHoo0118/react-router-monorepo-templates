@@ -31,7 +31,8 @@
       "@/ui": ["../../packages/ui"],
       "@/config/*": ["../../packages/config/*"],
       "@/types/*": ["../../packages/types/*"],
-      "@/utils/*": ["../../packages/utils/*"]
+      "@/utils/*": ["../../packages/utils/*"],
+      "@/shared/*": ["src/shared/*"]
     }
   },
   "include": ["src"]

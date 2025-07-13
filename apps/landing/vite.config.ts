@@ -1,6 +1,6 @@
 import { reactRouter } from "@react-router/dev/vite";
 
-import { defineConfig, loadEnv } from "vite";
+import { defineConfig, loadEnv, type Plugin } from "vite";
 import { reactRouterHonoServer } from "react-router-hono-server/dev";
 import tsconfigPaths from "vite-tsconfig-paths";
 import checker from "vite-plugin-checker";
@@ -43,7 +43,7 @@ export default ({ mode }: { mode: string }) => {
           brotliSize: true,
           open: true,
         }),
-    ],
+    ] as Plugin[],
     server: {
       open: true,
       allowedHosts: true,

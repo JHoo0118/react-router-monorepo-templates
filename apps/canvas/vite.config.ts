@@ -6,6 +6,7 @@ import checker from "vite-plugin-checker";
 import compression from "vite-plugin-compression";
 import { visualizer } from "rollup-plugin-visualizer";
 import { vanillaExtractPlugin } from "@vanilla-extract/vite-plugin";
+import { tanstackRouter } from '@tanstack/router-plugin/vite'
 
 export default ({ mode }: { mode: string }) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
@@ -14,6 +15,10 @@ export default ({ mode }: { mode: string }) => {
 
   return defineConfig({
     plugins: [
+      tanstackRouter({
+        target: 'react',
+        autoCodeSplitting: true,
+      }),
       react(),
       vanillaExtractPlugin(),
       tsconfigPaths(),
